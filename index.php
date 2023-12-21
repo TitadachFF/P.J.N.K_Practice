@@ -25,7 +25,7 @@ switch ($action) {
         $controller = new StudentController($pdo);
         break;
     default:
-        $controller = new MajorController($pdo);
+        $controller = new CourseController($pdo);
 }
 
 $controller->run($action);
